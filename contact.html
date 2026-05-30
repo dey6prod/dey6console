@@ -6,6 +6,14 @@
     <meta name="description" content="Contact DEY6 Console in Boca Raton to schedule your 3DS, Vita, or PS2 repair.">
     <title>Contact Us | DEY6 Console</title>
     <link rel="stylesheet" href="style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9554J5QJVZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9554J5QJVZ');
+    </script>
 </head>
 <body>
     <nav class="navbar">
@@ -35,19 +43,12 @@
             </div>
 
             <div class="contact-form-container">
-                <!-- Форма отправки через API Web3Forms -->
                 <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
-                    
-                    <!-- Ваш персональный ключ из файла image_22aa3b.png -->
                     <input type="hidden" name="access_key" value="a7fc145d-3732-4746-8b20-cac0fd26a648">
-                    
-                    <!-- Тема входящего письма на вашей почте -->
                     <input type="hidden" name="subject" value="New Repair Request from DEY6 Console">
                     
-                    <!-- Страница, на которую перенаправит пользователя после успешной отправки -->
                     <input type="hidden" name="redirect" value="https://dey6consolerepairing.netlify.app/success.html">
                     
-                    <!-- Скрытое поле защиты от спам-ботов (Honeypot) -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <div class="form-group">
@@ -78,7 +79,6 @@
                     </div>
                     <div class="form-group">
                         <label for="photo">Upload Photo of Damage (Optional)</label>
-                        <!-- Имя поля изменено на attachment для корректной отправки файла через Web3Forms -->
                         <input type="file" id="photo" name="attachment" class="form-control" accept="image/*">
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
