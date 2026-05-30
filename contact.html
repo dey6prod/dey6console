@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact DEY6 Console in Boca Raton to schedule your 3DS, Vita, or PS2 repair.">
+    <title>Contact Us | DEY6 Console</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">DEY6<span>_CONSOLE</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section" style="padding-top: 150px;">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Describe your issue in detail. We'll get back to you with a diagnostic quote.</p>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: #fff;">Location</h4>
+                    <p style="color: var(--neon-green);">Boca Raton, Florida (Local Drop-off Available)</p>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="color: #fff;">Direct Contact</h4>
+                    <p><a href="tel:+19549996740">+1 (954) 999-6740</a> (Phone & WhatsApp)</p>
+                    <p><a href="mailto:dey6consoleboca@gmail.com">dey6consoleboca@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" action="/success.html">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone / WhatsApp</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="console">Console Type</label>
+                        <select id="console" name="console" class="form-control" required>
+                            <option value="">Select Console...</option>
+                            <option value="3DS">Nintendo 3DS Family</option>
+                            <option value="Vita">PS Vita</option>
+                            <option value="PS2">PlayStation 2</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Issue Description / Mod Request</label>
+                        <textarea id="message" name="message" class="form-control" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="photo">Upload Photo of Damage (Optional)</label>
+                        <input type="file" id="photo" name="photo" class="form-control" accept="image/*">
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

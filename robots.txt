@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Exclude private or development directories if needed
+Disallow: /cgi-bin/
+Disallow: /admin/
+
+# Point bots to the XML Sitemap
+Sitemap: https://www.dey6console.com/sitemap.xml
