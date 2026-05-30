@@ -35,7 +35,14 @@
             </div>
 
             <div class="contact-form-container">
-                <form name="contact" method="POST" data-netlify="true" enctype="multipart/form-data" action="/success.html">
+                <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+                    
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    
+                    <input type="hidden" name="subject" value="New Repair Request from DEY6 Console">
+                    
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
                     <div class="form-group">
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name" class="form-control" required>
@@ -64,7 +71,7 @@
                     </div>
                     <div class="form-group">
                         <label for="photo">Upload Photo of Damage (Optional)</label>
-                        <input type="file" id="photo" name="photo" class="form-control" accept="image/*">
+                        <input type="file" id="photo" name="attachment" class="form-control" accept="image/*">
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
                 </form>
