@@ -35,12 +35,19 @@
             </div>
 
             <div class="contact-form-container">
+                <!-- Форма отправки через API Web3Forms -->
                 <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
                     
-                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                    <!-- Ваш персональный ключ из файла image_22aa3b.png -->
+                    <input type="hidden" name="access_key" value="a7fc145d-3732-4746-8b20-cac0fd26a648">
                     
+                    <!-- Тема входящего письма на вашей почте -->
                     <input type="hidden" name="subject" value="New Repair Request from DEY6 Console">
                     
+                    <!-- Страница, на которую перенаправит пользователя после успешной отправки -->
+                    <input type="hidden" name="redirect" value="https://dey6consolerepairing.netlify.app/success.html">
+                    
+                    <!-- Скрытое поле защиты от спам-ботов (Honeypot) -->
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                     <div class="form-group">
@@ -71,6 +78,7 @@
                     </div>
                     <div class="form-group">
                         <label for="photo">Upload Photo of Damage (Optional)</label>
+                        <!-- Имя поля изменено на attachment для корректной отправки файла через Web3Forms -->
                         <input type="file" id="photo" name="attachment" class="form-control" accept="image/*">
                     </div>
                     <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Request</button>
